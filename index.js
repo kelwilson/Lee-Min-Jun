@@ -133,7 +133,7 @@ for (let i = 0; i < collaborations.length; i++) {
 
 
 
-languageList.addEventListener('click', function () {
+languageList.addEventListener('click',() => {
   console.log('test');
   languages.style.height = '100%';
 })
