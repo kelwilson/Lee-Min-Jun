@@ -43,7 +43,7 @@
   }
 
   .nav-item {
-    margin: 30px;
+    margin: 15px;
     grid-template-columns: 2fr repeat(7, 1fr);
 
   }
@@ -120,7 +120,7 @@
 
   .content-wrapper {
    grid-column: 2;
-   margin: 150px;
+   margin: 50px;
    /* position: relative;
    z-index: 1; */
   }
@@ -173,7 +173,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    margin: 5px;
+    margin: 15px;
     border: 2px solid rgb(236, 233, 233);
   }
 
