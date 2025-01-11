@@ -14,8 +14,6 @@ console.log(imageWrapper)
 //   console.log('test');
 // })
 
-console.log(closeBtn);
-
 
 const collaborations = [
   {
@@ -139,16 +137,15 @@ for (let i = 0; i < collaborations.length; i++) {
 const images = document.querySelectorAll('.design-img')
 console.log(images)
 // I'm trying to display the image and the description according to the clicked image
+// My best code for this app (09-01-2025)
 images.forEach((img,ind) => {
-  
   img.addEventListener('click', () => {
     collaborations.forEach(item => {
       if(`./suits/suit${ind}.png` === item.designImg){
-        openModal(item.designImg, item.designName)
+        openModal(item.designImg, item.designName, item.description)
         }
     })
   })
-  
 })
 
 // images.forEach((img,ind) => {
@@ -158,16 +155,19 @@ images.forEach((img,ind) => {
   
 // })
 
+
+// close modal eventlistener
 closeBtn.addEventListener('click', closeModal)
 // imageWrapper.addEventListener('click', closeModal)
 
-function openModal(pic, pictext){
+// function to open the modal and show the full image and the description
+function openModal(pic, pictext,description){
   imageWrapper.style.display = 'flex'
   fullImg.src = pic
-  imgName.innerHTML = pictext
-  
+  imgName.innerHTML = pictext 
 }
 
+// close modal function
 function closeModal() {
   imageWrapper.style.display='none'
 }
