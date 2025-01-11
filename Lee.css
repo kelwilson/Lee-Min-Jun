@@ -164,7 +164,7 @@
 
   #footer-container {
     background: var(--white);
-    position: fixed;
+    /* position: fixed; */
     width: 98%;
     height: 70px;
     display: flex;
@@ -518,6 +518,8 @@ textarea {
     width: 90%;
     height: 500px;
     max-width: 400px;
+    border: 1px solid gray;
+    box-shadow: 0 32px 75px rgba(229, 229, 240, 0.2);
    }
 
    .collab-container {
@@ -527,21 +529,35 @@ textarea {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
    }
+   
+   .collab-container .cards {
+    transition: 1s ease;
+   }
+
+   .collab-container .cards:hover {
+    transform: scale(0.8);
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+   }
 
   .design-img {
     border-radius: 20px;
+    border: 1px solid grey;
     box-shadow: inset 0 2px 0px rgba(0,0,0,0.2);
     width: 270px;
     object-fit: fill; 
     height: 400px;
     cursor: pointer;
-    transition: 1s ease;
+    /* transition: 1s ease; */
   }
 
-  .design-img:hover {
+  .description {
+    width: 250px;
+  }
+
+  /* .design-img:hover {
     transform: scale(0.8);
     box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
-  }
+  } */
 
   .cards{
     display: flex;
