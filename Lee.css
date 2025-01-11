@@ -24,11 +24,11 @@
   }
 
  
-  img {
+  /* img {
     width: 400px;
     height: 500px;
 
-  }
+  } */
 
 
   .grid {
@@ -465,14 +465,14 @@ textarea {
   /* resume.html-end */
 
   /* collaboration.html-start */
-  .collab-container {
+  /* .collab-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 150px 0;
     row-gap: 30px;
-  }
+  } */
 
-  .card-container{
+  /* .card-container{
     border-radius: 20px;
     box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
     background: #e1dede;
@@ -483,18 +483,81 @@ textarea {
     justify-content: center;
     height: 100%;
     transition: 0.2s;
+  } */
+
+   .image-wrapper{
+     width: 100%;
+     height: 100vh;
+     background: rgba(0,0,0,0.6);
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     z-index: 100;
+   }
+
+  .fa-solid.fa-xmark {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
   }
+
+  .full-view {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+   .image-wrapper img {
+    width: 90%;
+    height: 500px;
+    max-width: 400px;
+   }
+
+   .collab-container {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+   }
 
   .design-img {
     border-radius: 20px;
     box-shadow: inset 0 2px 0px rgba(0,0,0,0.2);
-    width: 400px; 
+    width: 270px;
+    object-fit: fill; 
     height: 400px;
+    cursor: pointer;
+    transition: 1s ease;
   }
 
-  .card-container:hover {
-    transform: scale(0.98);
+  .design-img:hover {
+    transform: scale(0.8);
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
   }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  /* .card-container:hover {
+    transform: scale(0.98);
+  } */
   /* collaboration.html-end*/
 
   .hidden {
