@@ -290,6 +290,10 @@
 
 
   #design-container {
+    background-image: url('./suits/canvas-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
     /* max-width: 1440px;
     margin: 0 auto;
     height: 100vh; */
@@ -399,22 +403,28 @@
 
   /* contact.html-start */
 
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    height: 750px;
+    overflow: hidden;
+  }
   .contact-container {
     background: url('./assets/textiles/textile.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    overflow: hidden;
-    height: 100vh;
+    
+    /* height: 100vh; */
   }
 
   .contact-wrapper {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: center; */
-    gap: 50px;
-    padding: 50px 0 0;
-    margin: 50px;
-    height: 100vh;
+    /* gap: 50px; */
+    /* padding: 50px 0 0; */
+    margin: 100px;
+    /* height: 100vh; */
     /* width: 80%; */
     background: var(--white);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
@@ -422,12 +432,17 @@
     
   }
 
+  .contact-form {
+    padding: 20px;
+  }
+
   .contact-img {
     width: 350px;
-    height: 350px;
+    height: 320px;
+    object-fit: cover;
     border-radius: 20px;
     /* box-shadow: 0 3px 10px rgba(0,0,0,0.2); */
-    margin: 50px;
+    margin: 20px 0;
   }
 
 input,
@@ -450,8 +465,8 @@ textarea {
   .form-ul {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 400px;
+    /* width: 500px;
+    height: 400px; */
     /* border: 1px solid #000; */
   }
 
@@ -466,7 +481,7 @@ textarea {
   }
 
   .form-list:nth-child(3) {
-    height: 200px;
+    height: 150px;
     margin-bottom: 20px;
   }
 
@@ -479,6 +494,7 @@ textarea {
     font-family: var(--primary-font);
     font-size: 1.2rem;
     color: #837c7c;
+    margin-top: 10px;
   }
 
   .email-link {
